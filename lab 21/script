@@ -1,0 +1,25 @@
+#!/bin/bash
+
+function rec {
+        for dir in $1/*; do
+		local temp=$dir
+                if [[ -d $dir ]]; then
+                        rec $dir
+			echo "$temp"
+                fi
+        done
+}
+
+
+if [ -z $1 ]; then
+	start=$HOME;
+        echo "За основу был взят стандартный путь в домашний каталог";
+	rec $start
+else
+	if [[ $1 == ? ]]; then
+		 echo "Введите путь нужного каталога";
+	else
+		start=$1
+		rec $1
+	fi
+fi
