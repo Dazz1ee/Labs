@@ -1,0 +1,1 @@
+INSERT INTO commands(title, info) VALUES('cd', 'переход в директорию');
