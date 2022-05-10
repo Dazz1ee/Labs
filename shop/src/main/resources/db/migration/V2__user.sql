@@ -1,0 +1,10 @@
+INSERT INTO users (username, password) values ('admin', '$2a$12$057VH1eFV0hknTm/BssesecUz/foEO1aVv/5qIxvbLnrS0hKNhlK.');
+INSERT INTO roles (name) values ('ROLE_ADMIN'), ('ROLE_USER');
+INSERT INTO users_roles (role_id, user_id) VALUES (1,1);
+INSERT INTO users_roles (role_id, user_id) VALUES (2,1);
+INSERT INTO products(name, cost, image) VALUES ('Бульмени', 200, '/6000889080.jpg');
+INSERT INTO products(name, cost, image) VALUES ('Чебупели', 110, '/download.jpeg');
+INSERT INTO products(name, cost, image) VALUES ('Чебупели ветчина и сыр', 110, '/372801.jpeg');
+INSERT INTO products(name, cost, image) VALUES ('Хотстеры', 99, '/orig (1).png');
+INSERT INTO products(name, cost, image) VALUES ('Чебупица', 110, '/download (1).jpeg');
+INSERT INTO products(name, cost, image) VALUES ('Кругетсы', 110, '/orig.png');
