@@ -1,0 +1,19 @@
+server:
+  port : 8080
+  servlet:
+    context-path: /tinmarket
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+  aop:
+    proxy-target-class: true
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
+jwt_secret: fahfhauhawjkawfkaj
+jwt_name: tinmarket
+
