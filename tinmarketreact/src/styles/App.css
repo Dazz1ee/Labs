@@ -1,0 +1,11 @@
+.signview {
+    max-width: -webkit-fill-available;
+}
+.scale {
+    transition: 1s;
+    width: 11%;
+    cursor: pointer;
+}
+.scale:hover {
+    transform: scale(1.03);
+}
